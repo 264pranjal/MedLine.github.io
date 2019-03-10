@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footer1.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="checkbox.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+video {
+ position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index:-1;
+  /*to edit the opacity effect change the percentage below */
+  filter:opacity(60%);
+  transform: translateX(10%) translateY(40%);}
+
+.align{
+  float: none;
+  text-align: center;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2{
+    text-align: center;
+}
+table{
+   border-spacing: 20px; 
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <a href="home.html" class="logo"><img src="logo churaya hua1.png" style="width: auto;height: 25px;">MedLine</a>
+        <div class="header-right">
+          <a href="#t">Sign In</a>
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+      <div class="header1">
+             <div class="header1-right">
+              <a href="start.html">Home</a>
+              <a href="#">Check your symptoms</a>
+              <a href="#">Consult a Doctor</a>
+
+            </div>
+          </div>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Hey, how can I help you....</h2>
+      <form action="Display.php" method="get">
+      <table style="width: 100%">
+            <tr>
+                <td>      <label class="container">Fever
+                        <input type="checkbox" name="symp" value="Fever">
+                        <span class="checkmark"></span>
+                      </label></td>
+                <td>      <label class="container">Headache
+                        <input type="checkbox" name="symp" value="Headache">
+                        <span class="checkmark"></span>
+                      </label></td>
+                <td>      <label class="container">Fatigue
+                        <input type="checkbox" name="symp" value="Fatigue">
+                        <span class="checkmark"></span>
+                      </label></td>
+            </tr>
+            <tr>
+                <td>      <label class="container">Sneezing
+                        <input type="checkbox" name="symp" value="Sneezing">
+                        <span class="checkmark"></span>
+                      </label></td>
+                <td>      <label class="container">Cough
+                        <input type="checkbox" name="symp" value="Cough">
+                        <span class="checkmark"></span>
+                      </label></td>
+                <td>      <label class="container">Soar Throat
+                        <input type="checkbox" name="symp" value="Soar Throat">
+                        <span class="checkmark"></span>
+                      </label></td>
+            </tr>
+            <tr>
+                <td>      <label class="container">Abdominal Pain
+                        <input type="checkbox" name="symp" value="Abdominal Pain">
+                        <span class="checkmark"></span>
+                      </label></td>
+                <td>      <label class="container">Vomiting
+                        <input type="checkbox" name="symp" value="Vomiting">
+                        <span class="checkmark"></span>
+                      </label></td>
+                <td>      <label class="container">Nausea
+                        <input type="checkbox" name="symp" value="Nausea">
+                        <span class="checkmark"></span>
+                      </label></td>
+            </tr>
+            <tr>
+                <td>      <label class="container">Dehydration
+                        <input type="checkbox" name="symp" value="Dehydration">
+                        <span class="checkmark"></span>
+                      </label></td>
+                <td>      <label class="container">Acidity
+                        <input type="checkbox" name="symp" value="Acidity">
+                        <span class="checkmark"></span>
+                      </label></td>
+                <td>      <label class="container">Bloating
+                        <input type="checkbox" name="symp" value="Bloating">
+                        <span class="checkmark"></span>
+                      </label></td>
+            </tr>
+            <tr>
+                <td>      <label class="container">Loss of Breath
+                        <input type="checkbox" name="symp" value="Loss of Breath">
+                        <span class="checkmark"></span>
+                      </label></td>
+                <td>      <label class="container">Allergy
+                        <input type="checkbox" name="symp" value="Allergy">
+                        <span class="checkmark"></span>
+                      </label></td>
+                <td>      <label class="container">Insomnia
+                        <input type="checkbox" name="symp" value="Insomnia">
+                        <span class="checkmark"></span>
+                      </label></td>
+            </tr>
+             <tr>  
+      <td colspan="2" align="center"><input type="submit" value="submit" name="submit"></td>  
+   </tr>  
+        </table>
+      </form>
+      </div>
+  </div>
+  <video width="100px" autoplay="" loop="" muted="">
+      <source src="video/animie_2.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video> 
+
+
+<footer class="ct-footer">
+
+    <div class="ct-footer-meta text-center-sm">
+      <ul class="ct-socials list-unstyled list-inline">
+            <li >
+              <a href="" target="_blank" class="space"><img alt="facebook" src="https://www.solodev.com/assets/footer/facebook-white.png"></a>
+            </li>
+            <li>
+              <a href="" target="_blank" class="space"><img alt="twitter" src="https://www.solodev.com/assets/footer/twitter-white.png"></a>
+            </li>
+            <li>
+              <a href="" target="_blank" class="space"><img alt="youtube" src="https://www.solodev.com/assets/footer/youtube-white.png"></a>
+            </li>
+            <li>
+              <a href="" target="_blank" class="space"><img alt="instagram" src="https://www.solodev.com/assets/footer/instagram-white.png"></a>
+            </li>
+          </ul>
+     </div>
+  <br>
+  <h6 style="color: cornsilk" class="space1">
+Copyright NetMed organization.
+  </h6>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+.ct-footer {
+  background-color: #111;
+  width: 100%;
+  position: fixed;
+  justify-content: center;
+  left: 0%;
+  bottom: 0%;
+  height: 13%;
+}
+
+.ct-footer-meta {
+  padding-top: 0px;
+
+}
+
+.ct-footer-meta .ct-socials {
+  padding: 0px 0;
+  
+}
+
+.ct-footer-meta .ct-socials li {
+  padding: 0 0px;
+  float: right;
+}
+.space {
+  padding: 10px;
+}
+.space1 {
+  padding-left: 5px;
+}

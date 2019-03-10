@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footer1.css">
+    <link rel="stylesheet" href="header.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+video {
+ position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index:-1;
+  /*to edit the opacity effect change the percentage below */
+  filter:opacity(60%);
+  transform: translateX(10%) translateY(40%);}
+
+.align{
+  float: none;
+  text-align: center;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <a href="home.html" class="logo"><img src="logo churaya hua1.png" style="width: auto;height: 25px;">MedLine</a>
+        <div class="header-right">
+            <a href="home.html#signup1" id="signup1" data-toggle="modal" data-target="#at-signup">Sign Up</a>
+            <a href="home.html#login1" id="login1" data-toggle="modal" data-target="#at-login">Sign in</a>
+        </div>
+      </div>
+      <div class="header1">
+             <div class="header1-right">
+              <a href="start.html">Home</a>
+              <a href="chat.html">Check your symptoms</a>
+              <a href="#">Consult a Doctor</a>
+
+            </div>
+          </div>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 class="align">About us</h2>
+      <p>Some text..</p>
+      </div>
+  </div>
+  <video width="100px" autoplay="" loop="" muted="">
+      <source src="video/animie_2.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video> 
+
+
+<footer class="ct-footer">
+
+    <div class="ct-footer-meta text-center-sm">
+      <ul class="ct-socials list-unstyled list-inline">
+            <li >
+              <a href="" target="_blank" class="space"><img alt="facebook" src="https://www.solodev.com/assets/footer/facebook-white.png"></a>
+            </li>
+            <li>
+              <a href="" target="_blank" class="space"><img alt="twitter" src="https://www.solodev.com/assets/footer/twitter-white.png"></a>
+            </li>
+            <li>
+              <a href="" target="_blank" class="space"><img alt="youtube" src="https://www.solodev.com/assets/footer/youtube-white.png"></a>
+            </li>
+            <li>
+              <a href="" target="_blank" class="space"><img alt="instagram" src="https://www.solodev.com/assets/footer/instagram-white.png"></a>
+            </li>
+          </ul>
+     </div>
+  <br>
+  <h6 style="color: cornsilk" class="space1">
+Copyright NetMed organization.
+  </h6>
+</div>
+</footer>
+
+</body>
+</html>
